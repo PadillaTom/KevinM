@@ -1,7 +1,15 @@
 import React from 'react';
+import Cocktails from './Cocktails';
 
-const CocktailList = () => {
-  return <div>Cocktail List</div>;
-};
-
-export default CocktailList;
+export default function CocktailList({ cocktails, title }) {
+  return (
+    <section className='section'>
+      <h2 className='section-title'>{title}</h2>
+      <div className='products-center'>
+        {cocktails.map((item) => {
+          return <Cocktails key={item.id} {...item}></Cocktails>;
+        })}
+      </div>
+    </section>
+  );
+}
