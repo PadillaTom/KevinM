@@ -4,6 +4,7 @@ import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 // Pages:
 import Home from './pages/Home';
+import Footer from './components/Footer';
 import About from './pages/About';
 import CocktailDetails from './pages/CocktailDetails';
 import Cocktails from './pages/Cocktails';
@@ -18,6 +19,7 @@ function App() {
   return (
     <Router>
       <Header></Header>
+
       <Switch>
         <Route path='/' exact>
           <Home></Home>
@@ -42,6 +44,7 @@ function App() {
           <Error></Error>
         </Route>
       </Switch>
+      <Footer></Footer>
     </Router>
   );
 }
