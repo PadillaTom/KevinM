@@ -331,7 +331,12 @@ ul {
   margin: 0.5rem auto;
 }
 /* End Offer Component */
-/* ::::::::::::::::::: Variables ::::::::::::::::::::: */
-/* End Variables */
+/* ::::::::::::::::::: Footer::::::::::::::::::::: */
+.footer {
+  width: 100vw;
+  background-color: #0e0e0e;
+  border-top: 1px solid #e53d002c;
+}
+/* End Footer*/
 /* ::::::::::::::::::: Variables ::::::::::::::::::::: */
 /* End Variables */
