@@ -1,7 +1,10 @@
 import React from 'react';
+import Hero from '../components/Hero';
 
-const Home = () => {
-  return <div>Hello form Home</div>;
-};
-
-export default Home;
+export default function home() {
+  return (
+    <React.Fragment>
+      <Hero></Hero>
+    </React.Fragment>
+  );
+}

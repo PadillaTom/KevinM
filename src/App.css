@@ -1,5 +1,6 @@
 /* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,100;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500;1,600&family=Roboto:ital,wght@0,400;0,500;1,300&family=Sansita+Swashed:wght@400;500&display=swap');
+
 /* ::::::::::::::::::: Globals ::::::::::::::::::::: */
 * {
   margin: 0;
@@ -7,7 +8,7 @@
   box-sizing: border-box;
 }
 html {
-  font-family: 'Roboto', sans-serif;
+  font-family: var(--TextsFont);
   background-color: var(--BgColor);
 }
 a {
@@ -25,41 +26,221 @@ a {
 }
 .section-title {
   text-align: center;
-  color: var(--MainColor);
-  font-size: 2rem;
+  color: white;
+  font-size: 1.5rem;
   letter-spacing: 2px;
   padding-bottom: 2rem;
   text-transform: capitalize;
+  font-family: var(--TitlesFont);
 }
 @media screen and (min-width: 768px) {
   .section-center {
     width: 95vw;
   }
+  .section-title {
+    font-size: 2rem;
+  }
 }
 ul {
   list-style: none;
+}
+.btn {
+  padding: 0.5rem 2rem;
+  border: 2px solid var(--CtaColor);
+  transition: var(--MainTransition);
+  border-radius: 1rem;
 }
 /* End Globals */
 
 /* ::::::::::::::::::: Variables ::::::::::::::::::::: */
 :root {
-  --BgColor: #f4f4f9;
+  /* Colors */
+  --BgColor: #202124;
   --MainColor: #011c27;
   --Light2Color: #007ea7;
   --Light1Color: #00c49a;
   --CtaColor: #e53d00;
+  /* Fonts */
+  --TextsFont: 'Roboto', sans-serif;
+  --LogoFont: 'Playfair Display', serif;
+  --TitlesFont: 'Sansita Swashed', cursive;
+  /* Others */
   --MainTransition: 0.3s ease all;
 }
 /* End Variables */
 
+/* ::::::::::::::::::: Header ::::::::::::::::::::: */
+.header {
+  width: 100vw;
+
+  background-color: black;
+  color: white;
+}
+.header-center {
+  width: 95vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+.header-name {
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+}
+.header-right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.65rem;
+  letter-spacing: 1.2px;
+}
+.header-right p {
+  margin-left: 1rem;
+}
+/* End Header */
+
+/* ::::::::::::::::::: Navbar ::::::::::::::::::::: */
+.navbar {
+  width: 100vw;
+  margin: 0 auto;
+}
+.navbar-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90vw;
+  margin: 0 auto;
+  position: relative;
+}
+.nav-logo-container {
+  font-size: 1.7rem;
+  padding: 0.5rem 0;
+  display: none;
+}
+.nav-logo-container span {
+  color: var(--CtaColor);
+}
+.nav-hamburger {
+  position: absolute;
+  font-size: 2rem;
+  color: white;
+  top: 1rem;
+  right: 0rem;
+  cursor: pointer;
+  transition: var(--MainTransition);
+  z-index: 1;
+}
+.nav-hamburger:hover {
+  color: var(--CtaColor);
+}
+/* End Navbar */
+
+/* ::::::::::::::::::: Error ::::::::::::::::::::: */
+.error-container {
+  width: 70vw;
+  margin: 0 auto;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--Light1Color);
+  font-size: 1.3rem;
+  letter-spacing: 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 300;
+}
+.btn-error {
+  margin-top: 2rem;
+  color: white;
+}
+.btn-error:hover {
+  color: white;
+  background-color: var(--CtaColor);
+}
+/* End Error */
+
+/* ::::::::::::::::::: About Page ::::::::::::::::::::: */
+.about-section {
+  text-align: center;
+  max-height: 100vh;
+  position: relative;
+}
+.section-title span {
+  color: var(--CtaColor);
+}
+.about-text {
+  color: white;
+  line-height: 1.6;
+  width: 75vw;
+  margin: 0 auto;
+  font-weight: 200;
+  margin: 2rem auto;
+}
+.about-kevin {
+  color: var(--CtaColor);
+  cursor: pointer;
+  letter-spacing: 1.5px;
+  margin-left: 0.3rem;
+}
+.btn-about {
+  color: white;
+}
+.btn-about:hover {
+  background-color: var(--CtaColor);
+}
+/* End About Page*/
+/* ::::::::::::::::::: Hero Component ::::::::::::::::::::: */
+.hero {
+  min-height: 80vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('./assets/emptyglass2.jpg') center/cover fixed no-repeat;
+  position: relative;
+}
+.banner {
+  color: white;
+  width: 90%;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-15%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.banner h1 {
+  font-weight: 300;
+  font-family: var(--LogoFont);
+  margin-bottom: 0.3rem;
+}
+.banner h1 span {
+  color: var(--CtaColor);
+}
+.banner h4 {
+  width: 80%;
+  font-weight: 300;
+  letter-spacing: 1.3px;
+  font-size: 0.8rem;
+}
+.btn-hero {
+  margin-top: 2rem;
+}
+.btn-hero:hover {
+  background: var(--CtaColor);
+}
+/* End Hero Component*/
 /* ::::::::::::::::::: Variables ::::::::::::::::::::: */
 /* End Variables */
-
 /* ::::::::::::::::::: Variables ::::::::::::::::::::: */
 /* End Variables */
-
 /* ::::::::::::::::::: Variables ::::::::::::::::::::: */
 /* End Variables */
-
 /* ::::::::::::::::::: Variables ::::::::::::::::::::: */
-/* End Variables */ ;
+/* End Variables */
+/* ::::::::::::::::::: Variables ::::::::::::::::::::: */
+/* End Variables */

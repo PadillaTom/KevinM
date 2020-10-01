@@ -9,18 +9,24 @@ import CocktailDetails from './pages/CocktailDetails';
 import Cocktails from './pages/Cocktails';
 import Contact from './pages/Contact';
 import Error from './pages/Error';
+import Kevin from './pages/Kevin';
 // Components:
+import Header from './components/Header';
 
 // Main:
 function App() {
   return (
     <Router>
+      <Header></Header>
       <Switch>
         <Route path='/' exact>
           <Home></Home>
         </Route>
         <Route path='/about'>
           <About></About>
+        </Route>
+        <Route path='/kevin'>
+          <Kevin></Kevin>
         </Route>
         <Route exact path='/cocktails'>
           <Cocktails></Cocktails>
