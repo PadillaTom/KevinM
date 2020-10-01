@@ -55,7 +55,7 @@ ul {
 /* ::::::::::::::::::: Variables ::::::::::::::::::::: */
 :root {
   /* Colors */
-  --BgColor: #202124;
+  --BgColor: #19191a;
   --MainColor: #011c27;
   --Light2Color: #007ea7;
   --Light1Color: #00c49a;
@@ -234,12 +234,103 @@ ul {
   background: var(--CtaColor);
 }
 /* End Hero Component*/
-/* ::::::::::::::::::: Variables ::::::::::::::::::::: */
-/* End Variables */
-/* ::::::::::::::::::: Variables ::::::::::::::::::::: */
-/* End Variables */
-/* ::::::::::::::::::: Variables ::::::::::::::::::::: */
-/* End Variables */
+
+/* ::::::::::::::::::: Cocktails Page ::::::::::::::::::::: */
+/* Cocktail List */
+.cocktail-page-title {
+  letter-spacing: 2.5px;
+  margin-bottom: 1rem;
+}
+/* Component */
+.cocktail {
+  width: 80vw;
+  margin: 0 auto;
+  background: #fafafa0e;
+  margin-bottom: 1.5rem;
+  box-shadow: 1px 1px 15px #e53d001b;
+}
+.cocktail:hover {
+  box-shadow: 1px 1px 15px #e53d00af;
+}
+.img-container img {
+  width: 100%;
+}
+.cocktail-footer {
+  height: 5rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.cocktail-title {
+  color: white;
+  margin-top: 0.5rem;
+}
+.btn-cocktail-link {
+  color: var(--CtaColor);
+  margin-top: 1rem;
+}
+.btn-cocktail-link:hover {
+  color: white;
+}
+/* End Cocktails Page */
+
+/* ::::::::::::::::::: Kevin ::::::::::::::::::::: */
+.kevin-info-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+}
+.kevin-text {
+  width: 85%;
+  color: white;
+  font-weight: 200;
+  text-align: center;
+  font-size: 0.9rem;
+  margin: 0 auto;
+}
+
+.btn-kevin {
+  margin-top: 1.5rem;
+  color: white;
+}
+.btn-kevin:hover {
+  background: var(--CtaColor);
+}
+/* End Kevin */
+/* ::::::::::::::::::: Offer Component::::::::::::::::::::: */
+.component-section {
+  margin: 0 auto;
+  margin-top: 2rem;
+  text-align: center;
+}
+.component-title {
+  text-align: center;
+  color: white;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  padding-bottom: 1.5rem;
+  text-transform: capitalize;
+  font-family: var(--TitlesFont);
+}
+.component-title span {
+  color: var(--CtaColor);
+}
+.offer-info-container {
+  color: white;
+  font-weight: 200;
+  letter-spacing: 0.9px;
+  width: 90%;
+  margin: 0 auto;
+}
+.offer-info-container span {
+  color: var(--CtaColor);
+}
+.offer-info-container p {
+  margin: 0.5rem auto;
+}
+/* End Offer Component */
 /* ::::::::::::::::::: Variables ::::::::::::::::::::: */
 /* End Variables */
 /* ::::::::::::::::::: Variables ::::::::::::::::::::: */

@@ -8,12 +8,12 @@ export default function Cocktails({ image, title, id, price }) {
     <article className='cocktail'>
       <div className='img-container'>
         <img src={url} alt={title} />
-        <Link to={`cocktails/${id}`} className='btn btn-product-link'>
+      </div>
+      <div className='cocktail-footer'>
+        <p className='cocktail-title'>{title}</p>
+        <Link to={`cocktails/${id}`} className='btn-cocktail-link'>
           Details
         </Link>
-      </div>
-      <div className='product-footer'>
-        <p className='product-title'>{title}</p>
       </div>
     </article>
   );
