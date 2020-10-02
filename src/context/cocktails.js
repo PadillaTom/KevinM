@@ -10,7 +10,7 @@ export default function CocktailProvider({ children }) {
   // States:
   const [loading, setLoading] = useState(false);
   const [cocktails, setCocktails] = useState([]);
-  const [featured, setFeatured] = useState([]);
+  // const [featured, setFeatured] = useState([]);
 
   // useEffect:
   useEffect(() => {
@@ -25,7 +25,7 @@ export default function CocktailProvider({ children }) {
     };
   }, []);
   return (
-    <CocktailContext.Provider value={{ loading, cocktails, featured }}>
+    <CocktailContext.Provider value={{ loading, cocktails }}>
       {children}
     </CocktailContext.Provider>
   );

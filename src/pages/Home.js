@@ -6,6 +6,7 @@ export default function home() {
   return (
     <React.Fragment>
       <Hero></Hero>
+      <div className='section-division'></div>
       <Offer></Offer>
     </React.Fragment>
   );
