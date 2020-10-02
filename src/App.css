@@ -76,7 +76,7 @@ ul {
   color: white;
 }
 .header-center {
-  width: 95vw;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -84,18 +84,18 @@ ul {
 }
 .header-name {
   font-size: 0.7rem;
-  letter-spacing: 2px;
+  letter-spacing: 1.2px;
 }
 .header-right {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  font-size: 0.65rem;
-  letter-spacing: 1.2px;
+  font-size: 0.7rem;
+  letter-spacing: 1.1px;
 }
 .header-right p {
-  margin-left: 0.6rem;
-  margin-right: 0.6rem;
+  margin-left: 0.4rem;
+  margin-right: 0.4rem;
 }
 @media screen and (min-width: 768px) {
   .header {
