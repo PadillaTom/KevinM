@@ -125,7 +125,7 @@ ul {
   position: fixed;
   font-size: 2rem;
   color: white;
-  top: 1.5rem;
+  top: 2rem;
   right: 1.5rem;
   cursor: pointer;
   transition: var(--MainTransition);
@@ -229,11 +229,17 @@ ul {
 /* ::::::::::::::::::: About Page ::::::::::::::::::::: */
 .about-section {
   text-align: center;
-  min-height: 75vh;
-  position: relative;
 }
 .section-title span {
   color: var(--CtaColor);
+}
+.about-section-container {
+  margin-top: 10rem; /* ----------> TO CENTER MOBILE*/
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }
 .about-text {
   color: white;
@@ -242,6 +248,7 @@ ul {
   margin: 0 auto;
   font-weight: 200;
   margin: 2rem auto;
+  margin-bottom: 4rem;
 }
 .about-kevin {
   color: var(--CtaColor);
@@ -251,6 +258,7 @@ ul {
 }
 .btn-about {
   color: white;
+  margin-bottom: 6.5rem; /* ----------> TO CENTER MOBILE*/
 }
 .btn-about:hover {
   background-color: var(--CtaColor);
@@ -258,7 +266,7 @@ ul {
 /* End About Page*/
 /* ::::::::::::::::::: Hero Component ::::::::::::::::::::: */
 .hero {
-  min-height: 80vh;
+  height: 75vh;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url('./assets/emptyglass2.jpg') center/cover fixed no-repeat;
   position: relative;
@@ -268,7 +276,7 @@ ul {
   width: 90%;
   margin: 0 auto;
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 5%;
   transform: translateY(-15%);
   display: flex;
@@ -338,6 +346,14 @@ ul {
 /* End Cocktails Page */
 
 /* ::::::::::::::::::: Kevin ::::::::::::::::::::: */
+.kevin-section-container {
+  margin-top: 7rem; /* ----------> TO CENTER MOBILE*/
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
 .kevin-info-container {
   display: flex;
   flex-direction: column;
@@ -351,19 +367,19 @@ ul {
   color: white;
   font-weight: 200;
   text-align: center;
-  font-size: 0.9rem;
+  font-size: 1rem;
   margin: 0 auto;
 }
 
 .btn-kevin {
-  margin-top: 1.5rem;
+  margin-top: 3rem;
   color: white;
 }
 .btn-kevin:hover {
   background: var(--CtaColor);
 }
 /* End Kevin */
-/* ::::::::::::::::::: Offer Component::::::::::::::::::::: */
+/* ::::::::::::::::::: Offer Component ::::::::::::::::::::: */
 .component-section {
   margin: 2rem auto;
   text-align: center;
@@ -394,7 +410,7 @@ ul {
   margin: 0.5rem auto;
 }
 /* End Offer Component */
-/* ::::::::::::::::::: Footer::::::::::::::::::::: */
+/* ::::::::::::::::::: Footer ::::::::::::::::::::: */
 .footer {
   width: 100vw;
   background-color: #0e0e0e;
