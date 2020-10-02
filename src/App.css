@@ -499,7 +499,6 @@ ul {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  width: 75%;
 }
 .form-title {
   color: var(--CtaColor);
@@ -515,6 +514,7 @@ ul {
   background: transparent;
   color: white;
   letter-spacing: 1.5px;
+  width: 70%;
 }
 .form-inputs input {
   margin: 0.3rem auto;
