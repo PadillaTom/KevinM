@@ -97,6 +97,12 @@ ul {
   margin-left: 0.6rem;
   margin-right: 0.6rem;
 }
+@media screen and (min-width: 768px) {
+  .header {
+    position: fixed;
+    z-index: 1;
+  }
+}
 /* End Header */
 
 /* ::::::::::::::::::: Navbar ::::::::::::::::::::: */
@@ -108,18 +114,14 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 90vw;
+  width: 100%;
   margin: 0 auto;
   position: relative;
 }
-.nav-logo-container {
-  font-size: 1.7rem;
-  padding: 0.5rem 0;
+.desktop-nav {
   display: none;
 }
-.nav-logo-container span {
-  color: var(--CtaColor);
-}
+
 /* Sidebar */
 .nav-hamburger {
   position: fixed;
@@ -206,7 +208,51 @@ ul {
 }
 
 /* Desktop */
-
+@media screen and (min-width: 768px) {
+  .nav-hamburger {
+    display: none;
+  }
+  .desktop-nav {
+    background: rgba(0, 0, 0, 0.46);
+    position: fixed;
+    top: 12px;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .desktop-nav-container {
+    padding: 1rem 0rem;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav-logo-container {
+    font-size: 1.7rem;
+    color: white;
+  }
+  .nav-logo-container span {
+    color: var(--CtaColor);
+  }
+  .desktop-nav-links-container {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .desktop-nav-links-container > * {
+    margin-right: 1rem;
+    cursor: pointer;
+    transition: var(--MainTransition);
+  }
+  .desktop-nav-links-container > *:hover {
+    color: var(--CtaColor);
+  }
+}
 /* End Navbar */
 
 /* ::::::::::::::::::: Error ::::::::::::::::::::: */
@@ -280,6 +326,12 @@ ul {
     line-height: 1.8;
   }
 }
+@media screen and (min-width: 900px) {
+  .about-text {
+    width: 45vw;
+    font-size: 1.2rem;
+  }
+}
 /* End About Page*/
 /* ::::::::::::::::::: Hero Component ::::::::::::::::::::: */
 .hero {
@@ -320,6 +372,11 @@ ul {
 }
 .btn-hero:hover {
   background: var(--CtaColor);
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    height: 85vh;
+  }
 }
 /* End Hero Component*/
 
@@ -372,6 +429,11 @@ ul {
     font-size: 2.5rem;
   }
 }
+@media screen and (min-width: 950px) {
+  .cocktails-cards-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 /* End Cocktails Page */
 
 /* ::::::::::::::::::: Kevin ::::::::::::::::::::: */
@@ -412,6 +474,12 @@ ul {
     line-height: 1.6;
   }
 }
+@media screen and (min-width: 900px) {
+  .kevin-text {
+    width: 45%;
+    line-height: 1.7;
+  }
+}
 /* End Kevin */
 /* ::::::::::::::::::: Offer Component ::::::::::::::::::::: */
 .component-section {
@@ -447,6 +515,12 @@ ul {
   .offer-info-container {
     width: 80%;
     line-height: 1.4;
+  }
+}
+@media screen and (min-width: 900px) {
+  .offer-info-container {
+    width: 40%;
+    line-height: 1.7;
   }
 }
 /* End Offer Component */
@@ -491,6 +565,11 @@ ul {
     font-size: 2.25rem;
     width: 40%;
     margin: 1rem auto;
+  }
+}
+@media screen and (min-width: 850px) {
+  .footer-icons-container {
+    width: 30%;
   }
 }
 /* End Footer*/
@@ -588,6 +667,59 @@ ul {
 }
 .btn-submit-form:hover {
   color: var(--CtaColor);
+}
+.contact-social-container-desktop {
+  display: none;
+}
+@media screen and (min-width: 900px) {
+  .contact-social-container {
+    display: none;
+  }
+  .contact-section-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: none;
+  }
+  /* Left */
+  .contact-info-icons-container-desktop {
+    width: 60%;
+    margin: 0 auto;
+  }
+  .contact-info-container p > * {
+    font-size: 2rem;
+    margin-right: 1rem;
+  }
+  .contact-info-container p {
+    font-size: 1rem;
+  }
+  .contact-social-container-desktop {
+    color: white;
+    font-size: 2rem;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact-social-container-desktop > * {
+    margin-right: 1rem;
+    transition: var(--MainTransition);
+    cursor: pointer;
+  }
+  .contact-social-container-desktop > *:hover {
+    color: var(--CtaColor);
+  }
+
+  /* Right */
+  .form-title {
+    font-size: 1.5rem;
+  }
+  .form-inputs textarea::placeholder {
+    width: 50%;
+    line-height: 1.7;
+  }
 }
 /* End Contact Page */
 

@@ -16,10 +16,21 @@ const Navbar = () => {
     <nav className='navbar'>
       <div className='navbar-center'>
         {/* Desktop */}
-        <div className='nav-logo-container'>
-          <p>
-            <span> K</span>evin <span> M</span>aurin
-          </p>
+        <div className='desktop-nav'>
+          <div className='desktop-nav-container'>
+            <div className='nav-logo-container'>
+              <Link to='/'>
+                <p>
+                  <span> K</span>evin <span> M</span>aurin
+                </p>
+              </Link>
+            </div>
+            <div className='desktop-nav-links-container'>
+              <Link to='/about'>About</Link>
+              <Link to='/cocktails'>Cocktails</Link>
+              <Link to='/contact'>Contact</Link>
+            </div>
+          </div>
         </div>
         {/* End Desktop */}
 

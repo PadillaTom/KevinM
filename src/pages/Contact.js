@@ -17,13 +17,19 @@ const Contact = () => {
           </h2>
         </div>
         <div className='contact-section-container'>
-          <div className='contact-info-container'>
-            <p>
-              <AiOutlinePhone></AiOutlinePhone> +00 00 000 00 00
-            </p>
-            <p>
-              <AiOutlineMail></AiOutlineMail> kevin@kevin.com
-            </p>
+          <div className='contact-info-icons-container-desktop'>
+            <div className='contact-info-container'>
+              <p>
+                <AiOutlinePhone></AiOutlinePhone> +00 00 000 00 00
+              </p>
+              <p>
+                <AiOutlineMail></AiOutlineMail> kevin@kevin.com
+              </p>
+            </div>
+            <div className='contact-social-container-desktop'>
+              <AiOutlineInstagram></AiOutlineInstagram>
+              <AiOutlineFacebook></AiOutlineFacebook>
+            </div>
           </div>
           <div className='contact-social-container'>
             <AiOutlineInstagram></AiOutlineInstagram>
