@@ -193,6 +193,17 @@ ul {
 .sidebar-social-icons > *:hover {
   color: var(--CtaColor);
 }
+@media screen and (min-width: 600px) {
+  .sidebar-close {
+    right: 4rem;
+  }
+  .sidebar-links {
+    top: 6rem;
+  }
+  .sidebar-social-icons {
+    margin-top: 2rem;
+  }
+}
 
 /* Desktop */
 
@@ -263,6 +274,12 @@ ul {
 .btn-about:hover {
   background-color: var(--CtaColor);
 }
+@media screen and (min-width: 600px) {
+  .about-text {
+    width: 70vw;
+    line-height: 1.8;
+  }
+}
 /* End About Page*/
 /* ::::::::::::::::::: Hero Component ::::::::::::::::::::: */
 .hero {
@@ -314,7 +331,7 @@ ul {
 }
 /* Component */
 .cocktail {
-  width: 80vw;
+  width: 80%;
   margin: 0 auto;
   background: #fafafa0e;
   margin-bottom: 3rem;
@@ -343,6 +360,18 @@ ul {
 .btn-cocktail-link:hover {
   color: white;
 }
+@media screen and (min-width: 600px) {
+  .cocktails-cards-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: none;
+  }
+  .cocktail-page-title {
+    letter-spacing: 2.5px;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+  }
+}
 /* End Cocktails Page */
 
 /* ::::::::::::::::::: Kevin ::::::::::::::::::::: */
@@ -370,13 +399,18 @@ ul {
   font-size: 1rem;
   margin: 0 auto;
 }
-
 .btn-kevin {
   margin-top: 3rem;
   color: white;
 }
 .btn-kevin:hover {
   background: var(--CtaColor);
+}
+@media screen and (min-width: 600px) {
+  .kevin-text {
+    width: 75%;
+    line-height: 1.6;
+  }
 }
 /* End Kevin */
 /* ::::::::::::::::::: Offer Component ::::::::::::::::::::: */
@@ -408,6 +442,12 @@ ul {
 }
 .offer-info-container p {
   margin: 0.5rem auto;
+}
+@media screen and (min-width: 600px) {
+  .offer-info-container {
+    width: 80%;
+    line-height: 1.4;
+  }
 }
 /* End Offer Component */
 /* ::::::::::::::::::: Footer ::::::::::::::::::::: */
@@ -445,6 +485,13 @@ ul {
 }
 .footer-icons-container > *:hover {
   color: white;
+}
+@media screen and (min-width: 600px) {
+  .footer-icons-container {
+    font-size: 2.25rem;
+    width: 40%;
+    margin: 1rem auto;
+  }
 }
 /* End Footer*/
 
@@ -495,7 +542,8 @@ ul {
 }
 /* Form */
 .contact-form-container {
-  margin-bottom: 10rem; /* ----------> TO CENTER MOBILE*/
+  margin-top: 3rem;
+  margin-bottom: 5rem; /* ----------> TO CENTER MOBILE*/
   display: flex;
   align-items: center;
   justify-content: space-around;
