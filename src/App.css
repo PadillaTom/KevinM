@@ -495,7 +495,11 @@ ul {
 }
 /* Form */
 .contact-form-container {
-  margin-bottom: 4rem;
+  margin-bottom: 10rem; /* ----------> TO CENTER MOBILE*/
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 75%;
 }
 .form-title {
   color: var(--CtaColor);
@@ -528,7 +532,6 @@ ul {
   background: transparent;
   outline: none;
   border: none;
-
   font-size: 1.2rem;
   color: white;
   letter-spacing: 3px;
