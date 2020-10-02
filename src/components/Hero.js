@@ -6,9 +6,9 @@ export default function Hero({ children }) {
     <div className='hero'>
       <div className='banner'>
         <h1>
-          Kevin Maurin <span>,</span>
+          Nyu<span>'</span>s Bartending Company <span>,</span>
         </h1>
-        <h4>bartender passionné et diplômé à l’European Bartender School.</h4>
+        <h4>Évènements cocktails privées. </h4>
         <Link to='/cocktails' className='btn btn-hero'>
           Cocktails
         </Link>

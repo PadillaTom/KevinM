@@ -20,10 +20,10 @@ const Contact = () => {
           <div className='contact-info-icons-container-desktop'>
             <div className='contact-info-container'>
               <p>
-                <AiOutlinePhone></AiOutlinePhone> +00 00 000 00 00
+                <AiOutlinePhone></AiOutlinePhone> +33 06 50 06 18 43
               </p>
               <p>
-                <AiOutlineMail></AiOutlineMail> kevin@kevin.com
+                <AiOutlineMail></AiOutlineMail> maurinkevin.jobs@gmail.com
               </p>
             </div>
             <div className='contact-social-container-desktop'>

@@ -17,9 +17,11 @@ const Footer = () => {
             <AiOutlineInstagram></AiOutlineInstagram>
           </div>
           <p>
-            Kevin Maurin <AiOutlineCopyrightCircle></AiOutlineCopyrightCircle>
+            Nyu's Bartending Company{' '}
+            <AiOutlineCopyrightCircle></AiOutlineCopyrightCircle>
             2020
           </p>
+          <p>+33 06 50 06 18 43 || maurinkevin.jobs@gmail.com </p>
           <p>Website by</p>
         </div>
       </div>

@@ -7,11 +7,11 @@ const Header = () => {
       <header className='header'>
         <div className='header-center'>
           <div className='header-left'>
-            <p className='header-name'>Kevin Maurin</p>
+            <p className='header-name'>Nyu's Bartending Company</p>
           </div>
           <div className='header-right'>
-            <p>+00 00 000 00 00</p>
-            <p>kevin@kevin.com</p>
+            <p>+33 06 50 06 18 43</p>
+            <p>maurinkevin.jobs@gmail.com</p>
           </div>
         </div>
       </header>
