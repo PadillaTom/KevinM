@@ -2,6 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 export default function Kevin() {
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
   return (
     <section className='section'>
       <div className='kevin-section-container'>
@@ -26,7 +29,7 @@ export default function Kevin() {
               équipe de lancer des évènements privé dans le but d’apporter une
               touche cocktail chez vous, à vos soirées ou évènements.
             </p>
-            <Link to='/contact' className='btn btn-kevin'>
+            <Link to='/contact' className='btn btn-kevin' onClick={scrollToTop}>
               Contact
             </Link>
           </div>

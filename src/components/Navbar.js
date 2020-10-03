@@ -10,7 +10,10 @@ import {
 const Navbar = () => {
   // Toggle Sidebar -->
   const [isOpen, setIsOpen] = useState(false);
-
+  // Scroll to top:
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
   // Main -->
   return (
     <nav className='navbar'>
@@ -19,17 +22,23 @@ const Navbar = () => {
         <div className='desktop-nav'>
           <div className='desktop-nav-container'>
             <div className='nav-logo-container'>
-              <Link to='/'>
+              <Link to='/' onClick={scrollToTop}>
                 <p>
                   <span>N</span>yu<span>'</span>s <span>B</span>.<span>C</span>.
                 </p>
               </Link>
             </div>
             <div className='desktop-nav-links-container'>
-              <Link to='/about'>About</Link>
+              <Link to='/about' onClick={scrollToTop}>
+                About
+              </Link>
               {/* <Link to='/cocktails'>Cocktails</Link> */}
-              <Link to='/soirees'>Soirées</Link>
-              <Link to='/contact'>Contact</Link>
+              <Link to='/soirees' onClick={scrollToTop}>
+                Soirées
+              </Link>
+              <Link to='/contact' onClick={scrollToTop}>
+                Contact
+              </Link>
             </div>
           </div>
         </div>
@@ -48,19 +57,43 @@ const Navbar = () => {
               ></AiOutlineClose>
             </div>
             <div className='sidebar-links'>
-              <Link to='/' onClick={() => setIsOpen(!isOpen)}>
+              <Link
+                to='/'
+                onClick={() => {
+                  setIsOpen(!isOpen);
+                  scrollToTop();
+                }}
+              >
                 Home
               </Link>
-              <Link to='/about' onClick={() => setIsOpen(!isOpen)}>
+              <Link
+                to='/about'
+                onClick={() => {
+                  setIsOpen(!isOpen);
+                  scrollToTop();
+                }}
+              >
                 About
               </Link>
               {/* <Link to='/cocktails' onClick={() => setIsOpen(!isOpen)}>
                 Cocktails
               </Link> */}
-              <Link to='/soirees' onClick={() => setIsOpen(!isOpen)}>
+              <Link
+                to='/soirees'
+                onClick={() => {
+                  setIsOpen(!isOpen);
+                  scrollToTop();
+                }}
+              >
                 Soirées
               </Link>
-              <Link to='/contact' onClick={() => setIsOpen(!isOpen)}>
+              <Link
+                to='/contact'
+                onClick={() => {
+                  setIsOpen(!isOpen);
+                  scrollToTop();
+                }}
+              >
                 Contact
               </Link>
               <div className='sidebar-social-icons'>

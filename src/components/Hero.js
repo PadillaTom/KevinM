@@ -2,6 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 export default function Hero({ children }) {
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
   return (
     <div className='hero'>
       <div className='banner'>
@@ -12,7 +15,7 @@ export default function Hero({ children }) {
         {/* <Link to='/cocktails' className='btn btn-hero'>
           Cocktails
         </Link> */}
-        <Link to='/soirees' className='btn btn-hero'>
+        <Link to='/soirees' className='btn btn-hero' onClick={scrollToTop}>
           Soirées
         </Link>
       </div>

@@ -2,6 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 export default function About() {
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
   return (
     <section className='section about-section'>
       <div className='section-center'>
@@ -12,7 +15,7 @@ export default function About() {
           <p className='about-text'>
             NBC est en entreprise spécialisée en évènement cocktails privée.
             Mené par
-            <Link to='/Kevin' className='about-kevin'>
+            <Link to='/Kevin' className='about-kevin' onClick={scrollToTop}>
               Kevin
             </Link>
             , un bartender passionné et spécialisé, fort d’une belle et riche
@@ -23,7 +26,7 @@ export default function About() {
           {/* <Link to='/cocktails' className='btn btn-about'>
             Cocktails
           </Link> */}
-          <Link to='/soirees' className='btn btn-about'>
+          <Link to='/soirees' className='btn btn-about' onClick={scrollToTop}>
             Soirées Thématiques
           </Link>
         </div>

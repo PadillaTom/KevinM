@@ -2,6 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 export default function Tarifs() {
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
   return (
     <section className='component-section'>
       <div className='section-center'>
@@ -28,7 +31,10 @@ export default function Tarifs() {
             <br />
             Vous pouvez aussi nous contacter
             <span>
-              <Link to='/contact'> ici </Link>
+              <Link to='/contact' onClick={scrollToTop}>
+                {' '}
+                ici{' '}
+              </Link>
             </span>
             afin de nous présenter votre projet et nous poser toutes les
             questions concernant ce que nous pouvons vous apporter.
