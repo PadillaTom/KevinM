@@ -28,7 +28,8 @@ const Navbar = () => {
             </div>
             <div className='desktop-nav-links-container'>
               <Link to='/about'>About</Link>
-              <Link to='/cocktails'>Cocktails</Link>
+              {/* <Link to='/cocktails'>Cocktails</Link> */}
+              <Link to='/soirees'>Soirées</Link>
               <Link to='/contact'>Contact</Link>
             </div>
           </div>
@@ -54,8 +55,11 @@ const Navbar = () => {
               <Link to='/about' onClick={() => setIsOpen(!isOpen)}>
                 About
               </Link>
-              <Link to='/cocktails' onClick={() => setIsOpen(!isOpen)}>
+              {/* <Link to='/cocktails' onClick={() => setIsOpen(!isOpen)}>
                 Cocktails
+              </Link> */}
+              <Link to='/soirees' onClick={() => setIsOpen(!isOpen)}>
+                Soirées
               </Link>
               <Link to='/contact' onClick={() => setIsOpen(!isOpen)}>
                 Contact

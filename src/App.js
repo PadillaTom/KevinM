@@ -11,6 +11,7 @@ import Cocktails from './pages/Cocktails';
 import Contact from './pages/Contact';
 import Error from './pages/Error';
 import Kevin from './pages/Kevin';
+import Soirees from './pages/Soirees';
 // Components:
 import Header from './components/Header';
 
@@ -32,6 +33,9 @@ function App() {
         </Route>
         <Route exact path='/cocktails'>
           <Cocktails></Cocktails>
+        </Route>
+        <Route exact path='/soirees'>
+          <Soirees></Soirees>
         </Route>
         <Route
           path='/cocktails/:id'

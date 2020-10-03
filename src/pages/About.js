@@ -20,8 +20,11 @@ export default function About() {
             de forte personnalités formé et spécialisé dans le milieu de la
             mixologie et les évènements privé.
           </p>
-          <Link to='/cocktails' className='btn btn-about'>
+          {/* <Link to='/cocktails' className='btn btn-about'>
             Cocktails
+          </Link> */}
+          <Link to='/soirees' className='btn btn-about'>
+            Soirées Thématiques
           </Link>
         </div>
       </div>
