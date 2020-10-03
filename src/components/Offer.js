@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 export default function Offer() {
   return (
@@ -20,12 +20,9 @@ export default function Offer() {
           <span> Si c’est le cas vous êtes au bon endroit !</span>
           <p>
             Nous proposons d’avoir un « espace bar à cocktail & débit de boisson
-            » avec les{' '}
-            <span>
-              {' '}
-              <Link to='/cocktails'>cocktails</Link>
-            </span>{' '}
-            avec ou sans alcool (appelés aussi « Mocktail ») de votre choix.
+            » avec les Cocktails
+            <span> {/* <Link to='/cocktails'>cocktails</Link> */}</span> avec ou
+            sans alcool (appelés aussi « Mocktail ») de votre choix.
           </p>
         </div>
       </div>

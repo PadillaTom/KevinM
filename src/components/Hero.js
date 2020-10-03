@@ -9,8 +9,11 @@ export default function Hero({ children }) {
           Nyu<span>'</span>s Bartending Company <span>,</span>
         </h1>
         <h4>Évènements cocktails privées. </h4>
-        <Link to='/cocktails' className='btn btn-hero'>
+        {/* <Link to='/cocktails' className='btn btn-hero'>
           Cocktails
+        </Link> */}
+        <Link to='/soirees' className='btn btn-hero'>
+          Soirées
         </Link>
       </div>
     </div>

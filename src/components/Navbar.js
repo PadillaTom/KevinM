@@ -21,8 +21,7 @@ const Navbar = () => {
             <div className='nav-logo-container'>
               <Link to='/'>
                 <p>
-                  <span>N</span>yu<span>'</span>s <span>B</span>artending{' '}
-                  <span>C</span>ompany
+                  <span>N</span>yu<span>'</span>s <span>B</span>.<span>C</span>.
                 </p>
               </Link>
             </div>
