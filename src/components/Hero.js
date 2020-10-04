@@ -9,14 +9,14 @@ export default function Hero({ children }) {
     <div className='hero'>
       <div className='banner'>
         <h1>
-          Nyu<span>'</span>s Bartending Company <span>,</span>
+          Nyu<span>'</span>s Mixology <span>,</span>
         </h1>
-        <h4>Évènements cocktails privées. </h4>
+        <h4>Évènements cocktails privées.</h4>
         {/* <Link to='/cocktails' className='btn btn-hero'>
           Cocktails
         </Link> */}
         <Link to='/soirees' className='btn btn-hero' onClick={scrollToTop}>
-          Soirées
+          Soirées à Thèmes
         </Link>
       </div>
     </div>

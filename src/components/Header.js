@@ -7,7 +7,7 @@ const Header = () => {
       <header className='header'>
         <div className='header-center'>
           <div className='header-left'>
-            <p className='header-name'>Nyu's B.C.</p>
+            <p className='header-name'>Nyu's M.</p>
           </div>
           <div className='header-right'>
             <p>+33 06 50 06 18 43</p>

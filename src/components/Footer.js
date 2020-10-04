@@ -1,5 +1,5 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
+
 import {
   AiOutlineInstagram,
   AiOutlineFacebook,
@@ -22,7 +22,9 @@ const Footer = () => {
             2020
           </p>
           <p>+33 06 50 06 18 43 || maurinkevin.jobs@gmail.com </p>
-          <p>Website by</p>
+          <p className='padilla-add'>
+            Website by <a href='http://padillatomas.com'>Tomas Padilla.</a>
+          </p>
         </div>
       </div>
     </footer>

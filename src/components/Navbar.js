@@ -24,13 +24,14 @@ const Navbar = () => {
             <div className='nav-logo-container'>
               <Link to='/' onClick={scrollToTop}>
                 <p>
-                  <span>N</span>yu<span>'</span>s <span>B</span>.<span>C</span>.
+                  <span>N</span>yu<span>'</span>s <span>M</span>ixology
+                  <span>.</span>
                 </p>
               </Link>
             </div>
             <div className='desktop-nav-links-container'>
               <Link to='/about' onClick={scrollToTop}>
-                About
+                Présentation
               </Link>
               {/* <Link to='/cocktails'>Cocktails</Link> */}
               <Link to='/soirees' onClick={scrollToTop}>
@@ -73,7 +74,7 @@ const Navbar = () => {
                   scrollToTop();
                 }}
               >
-                About
+                Présentation
               </Link>
               {/* <Link to='/cocktails' onClick={() => setIsOpen(!isOpen)}>
                 Cocktails

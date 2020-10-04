@@ -23,7 +23,7 @@ export default function Equipe() {
             className='btn btn-about-white'
             onClick={scrollToTop}
           >
-            Soirées Thématiques
+            Soirées à Thèmes
           </Link>
         </div>
       </div>
